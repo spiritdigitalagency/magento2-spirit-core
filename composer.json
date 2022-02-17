@@ -1,0 +1,34 @@
+{
+    "name": "spirit-digital-agency/magento2-spirit-core",
+    "description": "Basic functionality used by other Spirit Digital Agency's modules",
+    "keywords": [
+        "magento2",
+        "magento2-module",
+        "spirit digital agency"
+    ],
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "GPL-3.0-or-later"
+    ],
+    "authors": [
+        {
+            "name": "Spirit Digital Agency",
+            "email": "support@spirit.com.gr",
+            "homepage": "https://spirit.com.gr",
+            "role": "Technical Support"
+        }
+    ],
+    "require": {
+        "php": "~7.1.3||~7.2.0||~7.3.0||~7.4.0",
+        "magento/framework": ">100.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Spirit\\Core\\": ""
+        }
+    }
+}
