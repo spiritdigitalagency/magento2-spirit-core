@@ -11,7 +11,7 @@ class Config implements ArgumentInterface
     /**
      * @var ScopeConfigInterface
      */
-    protected ScopeConfigInterface $_scopeConfig;
+    protected $_scopeConfig;
     
     /**
      * Config constructor.
@@ -29,7 +29,7 @@ class Config implements ArgumentInterface
      *
      * @return mixed
      */
-    public function getConfig(string $key)
+    public function getConfig($key)
     {
         return $this->_scopeConfig->getValue(
             $key,
